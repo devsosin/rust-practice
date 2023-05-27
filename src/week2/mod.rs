@@ -2,7 +2,7 @@ pub fn div2(num1: u16, num2: u16) -> u32 {
     // 정수형 나눗셈의 경우 정수로만 결과를 반환하기 때문에 f64로 변환
     let num1 = num1 as f64;
     let num2 = num2 as f64;
-    let result = num1 / num2 * 1000 as f64;
+    let result = num1 / num2 * 1000.0;
 
     // 계산 결과를 정수형으로 다시 변환 (정수부분만 가져오기)
     result as u32
@@ -162,27 +162,27 @@ pub fn multiply_list(list: Vec<i32>) -> Vec<i32> {
 }
 
 #[test]
-fn practice_2_1() {
+fn practice_1() {
     assert_eq!(1500, div2(3, 2));
     assert_eq!(2333, div2(7, 3));
     assert_eq!(62, div2(1, 16));
 }
 
 #[test]
-fn practice_2_2() {
+fn practice_2() {
     assert_eq!(-1, is_eqaul(2, 3));
     assert_eq!(1, is_eqaul(11, 11));
     assert_eq!(-1, is_eqaul(7, 99));
 }
 
 #[test]
-fn practice_2_3() {
+fn practice_3() {
     assert_eq!(vec![5, 4], fraction_add2(1, 2, 3, 4));
     assert_eq!(vec![29, 6], fraction_add2(9, 2, 1, 3));
 }
 
 #[test]
-fn practice_2_4() {
+fn practice_4() {
     assert_eq!(vec![2, 4, 6, 8, 10], multiply_list(vec![1, 2, 3, 4, 5]));
     assert_eq!(
         vec![2, 4, 200, -198, 2, 4, 6],
