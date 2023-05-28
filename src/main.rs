@@ -1,5 +1,7 @@
 use std::any::type_name;
 
+use practice::week6::print_right_triangle;
+
 fn type_of<T>(_: T) -> &'static str {
     type_name::<T>()
 }
@@ -22,4 +24,5 @@ fn main() {
     // }
 
     // fraction_add(1, 2, 3, 4);
+    print_right_triangle(3);
 }
