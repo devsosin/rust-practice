@@ -3,7 +3,9 @@
 // pub mod week3;
 // pub mod week4;
 // pub mod week5;
-pub mod week6;
+// pub mod week6;
+// pub mod week7;
+pub mod week8;
 
 #[cfg(test)]
 mod tests {
