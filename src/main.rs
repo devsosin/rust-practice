@@ -1,6 +1,6 @@
 use std::any::type_name;
 
-use practice::week8::get_pairs;
+// use practice::week8::get_pairs;
 
 // use practice::week6::print_right_triangle;
 
@@ -31,13 +31,13 @@ fn main() {
 
     // split_array(vec![1, 2, 3, 4, 5], 1, 3)
 
-    // 시간 체크
-    // 100만개 쌍을 구하는 데 0.103초, 0.090초 (파이썬 - 0.468초, 0.527초) 단순계산 rust가 약 5배 정도 빠른듯?
-    let start = Instant::now();
-    println!("{:?}", get_pairs(1000000));
-    println!("{:?}", get_pairs(1000000));
-    println!("{:?}", get_pairs(1000000));
-    println!("{:?}", get_pairs(1000000));
-    let duration = start.elapsed();
-    println!("Time elapsed in expensive_function() is: {:?}", duration);
+    // // 시간 체크
+    // // 100만개 쌍을 구하는 데 0.103초, 0.090초 (파이썬 - 0.468초, 0.527초) 단순계산 rust가 약 5배 정도 빠른듯?
+    // let start = Instant::now();
+    // println!("{:?}", get_pairs(1000000));
+    // println!("{:?}", get_pairs(1000000));
+    // println!("{:?}", get_pairs(1000000));
+    // println!("{:?}", get_pairs(1000000));
+    // let duration = start.elapsed();
+    // println!("Time elapsed in expensive_function() is: {:?}", duration);
 }
